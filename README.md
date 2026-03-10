@@ -13,9 +13,6 @@
 - [AI usage](#ai-usage)
 
 
-
-
-
 ## Demo
 
 ## Features
@@ -35,3 +32,7 @@
 ## AI usage
 
 - Chatgpt helped me create the subheadings and structure for this README file. The contents were written by me
+
+- I have used Chatgpt, Gemeni and GitHub copilot to research syntax.
+
+- I used GitHub copilot in order to create the necesarry docker- and docker-compose files.
