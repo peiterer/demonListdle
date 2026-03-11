@@ -1,0 +1,203 @@
+.guess-page {
+  min-height: 100vh;
+  padding: 2rem 1rem 3rem;
+  background: #0f1115;
+  color: #f5f7fb;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 1.5rem;
+  text-align: center;
+  color: #aab3c5;
+}
+
+.top-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.new-game-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1.1rem;
+  background: #2f3848;
+  color: #f5f7fb;
+  font-weight: 700;
+}
+
+.new-game-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.guess-form {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.guess-input {
+  border: 1px solid #2d3340;
+  border-radius: 10px;
+  padding: 0.8rem 0.95rem;
+  background: #181c24;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.guess-input:focus {
+  outline: 2px solid #5f6fff;
+  outline-offset: 1px;
+}
+
+.guess-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  background: #5f6fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.guess-button:disabled,
+.guess-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.suggestions {
+  grid-column: 1 / -1;
+  margin-top: -0.35rem;
+  border: 1px solid #2d3340;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #181c24;
+}
+
+.suggestion-item {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #2d3340;
+  border-radius: 0;
+  padding: 0.6rem 0.9rem;
+  background: #181c24;
+  color: #f5f7fb;
+  font-weight: 500;
+}
+
+.suggestion-item:last-child {
+  border-bottom: 0;
+}
+
+.suggestion-item:hover {
+  background: #232938;
+  border-color: #2d3340;
+}
+
+.status {
+  text-align: center;
+  margin: 0.9rem 0;
+}
+
+.status.error {
+  color: #ff8282;
+}
+
+.status.success {
+  color: #6ee7b7;
+}
+
+.board {
+  margin: 1.1rem auto 0;
+  width: 100%;
+  max-width: none;
+  overflow-x: auto;
+  border: 1px solid #2b3140;
+  border-radius: 12px;
+  background: #151922;
+}
+
+.header-row,
+.data-row {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 220px 100px minmax(210px, 1.2fr) 110px minmax(180px, 1fr) minmax(180px, 1fr) 120px 110px;
+}
+
+.header-cell,
+.cell {
+  border-right: 1px solid #2b3140;
+  border-bottom: 1px solid #2b3140;
+  padding: 0.7rem 0.45rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-cell:last-child,
+.cell:last-child {
+  border-right: none;
+}
+
+.header-cell {
+  background: #1f2532;
+  color: #ced5e2;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.cell {
+  background: #232938;
+}
+
+.cell-neutral {
+  background: #2b3140;
+}
+
+.cell-correct {
+  background: #1f8f52;
+}
+
+.cell-close {
+  background: #a27212;
+}
+
+.cell-incorrect {
+  background: #7a2634;
+}
+
+.thumb {
+  width: 100%;
+  max-width: 190px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  .guess-form {
+    grid-template-columns: 1fr;
+  }
+
+  .guess-button {
+    width: 100%;
+  }
+}

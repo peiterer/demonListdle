@@ -19,6 +19,10 @@
 
 ## Tech stack
 
+- Frontend: React
+- Backend: Flask
+- DB: MariaDB
+
 ## DB structure
 
 ## Setup
