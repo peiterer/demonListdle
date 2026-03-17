@@ -65,7 +65,7 @@ if count == 0:
                     i.get("name"),
                     i.get("position"),
                     i.get("creator"),
-                    i.get("verifyer"),
+                    i.get("verifier"),
                     i.get("thumbnail"),
                     i.get("downloads"),
                     i.get("length"),
